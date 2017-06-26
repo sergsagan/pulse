@@ -35,9 +35,6 @@ Array.prototype.slice.call(document.querySelectorAll('.btn'), 0).forEach(functio
 });
 
 initBt1();
-initBt2();
-initBt3();
-initBt4();
 
 // Button
 function initBt1() {
@@ -50,43 +47,4 @@ function initBt1() {
     TweenLite.to(turb, 3, { attr: { x: '-=300', y: '-=300', width: 600, height: 600 } });
     TweenLite.fromTo(dm, 2, { attr: { scale: 30 } }, { attr: { scale: 0 } });
   });
-}
-
-// Button
-function initBt2() {
-    var bt = document.querySelectorAll('#component-2')[0];
-    var turb = document.querySelectorAll('#filter-ripple-2 feImage')[0];
-    var dm = document.querySelectorAll('#filter-ripple-2 feDisplacementMap')[0];
-
-    bt.addEventListener('click', function(e) {
-        TweenLite.set(turb, { attr: { x: isFF ? e.offsetX : e.offsetX + 10, y: isFF ? e.offsetY : e.offsetY + 10, width: 0, height: 0 } });
-        TweenLite.to(turb, 3, { attr: { x: '-=300', y: '-=300', width: 600, height: 600 } });
-        TweenLite.fromTo(dm, 2, { attr: { scale: 30 } }, { attr: { scale: 0 } });
-    });
-}
-
-// Button
-function initBt3() {
-    var bt = document.querySelectorAll('#component-3')[0];
-    var turb = document.querySelectorAll('#filter-ripple-3 feImage')[0];
-    var dm = document.querySelectorAll('#filter-ripple-3 feDisplacementMap')[0];
-
-    bt.addEventListener('click', function(e) {
-        TweenLite.set(turb, { attr: { x: isFF ? e.offsetX : e.offsetX + 10, y: isFF ? e.offsetY : e.offsetY + 10, width: 0, height: 0 } });
-        TweenLite.to(turb, 3, { attr: { x: '-=300', y: '-=300', width: 600, height: 600 } });
-        TweenLite.fromTo(dm, 2, { attr: { scale: 30 } }, { attr: { scale: 0 } });
-    });
-}
-
-// Button
-function initBt4() {
-    var bt = document.querySelectorAll('#component-4')[0];
-    var turb = document.querySelectorAll('#filter-ripple-4 feImage')[0];
-    var dm = document.querySelectorAll('#filter-ripple-4 feDisplacementMap')[0];
-
-    bt.addEventListener('click', function(e) {
-        TweenLite.set(turb, { attr: { x: isFF ? e.offsetX : e.offsetX + 10, y: isFF ? e.offsetY : e.offsetY + 10, width: 0, height: 0 } });
-        TweenLite.to(turb, 3, { attr: { x: '-=300', y: '-=300', width: 600, height: 600 } });
-        TweenLite.fromTo(dm, 2, { attr: { scale: 30 } }, { attr: { scale: 0 } });
-    });
 }
