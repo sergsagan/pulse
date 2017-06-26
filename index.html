@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" co ntent="width=device-width, initial-scale=1">
+		<title>Button Effects</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="" />
+		<link rel="stylesheet" type="text/css" href="jquery.formstyler.css" />
+		<link rel="stylesheet" type="text/css" href="main.css" />
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<div class="item">
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+					<defs>
+						<filter id="filter-ripple-1">
+							<feImage xlink:href="img/ripple.png" x="0" y="0" width="0" height="0" result="ripple"></feImage>
+							<feDisplacementMap xChannelSelector="R" yChannelSelector="G" color-interpolation-filters="sRGB" in="SourceGraphic" in2="ripple" scale="0" result="dm" />
+							<feComposite operator="in" in2="ripple"></feComposite>
+							<feComposite in2="SourceGraphic"></feComposite>
+						</filter>
+					</defs>
+				</svg>
+				<button id="component-1" class="btn btn-buy" style="filter: url('#filter-ripple-1')">Купить</button>
+			</div>
+			<div class="item">
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+					<defs>
+						<filter id="filter-ripple-2">
+							<feImage xlink:href="img/ripple.png" x="0" y="0" width="0" height="0" result="ripple"></feImage>
+							<feDisplacementMap xChannelSelector="R" yChannelSelector="G" color-interpolation-filters="sRGB" in="SourceGraphic" in2="ripple" scale="0" result="dm" />
+							<feComposite operator="in" in2="ripple"></feComposite>
+							<feComposite in2="SourceGraphic"></feComposite>
+						</filter>
+					</defs>
+				</svg>
+				<button id="component-2" class="btn btn-buy" style="filter: url('#filter-ripple-2')">Купить</button>
+			</div>
+			<div class="item">
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+					<defs>
+						<filter id="filter-ripple-3">
+							<feImage xlink:href="img/ripple.png" x="0" y="0" width="0" height="0" result="ripple"></feImage>
+							<feDisplacementMap xChannelSelector="R" yChannelSelector="G" color-interpolation-filters="sRGB" in="SourceGraphic" in2="ripple" scale="0" result="dm" />
+							<feComposite operator="in" in2="ripple"></feComposite>
+							<feComposite in2="SourceGraphic"></feComposite>
+						</filter>
+					</defs>
+				</svg>
+				<button id="component-3" class="btn btn-buy" style="filter: url('#filter-ripple-3')">Купить</button>
+			</div>
+			<div class="item">
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+					<defs>
+						<filter id="filter-ripple-4">
+							<feImage xlink:href="img/ripple.png" x="0" y="0" width="0" height="0" result="ripple"></feImage>
+							<feDisplacementMap xChannelSelector="R" yChannelSelector="G" color-interpolation-filters="sRGB" in="SourceGraphic" in2="ripple" scale="0" result="dm" />
+							<feComposite operator="in" in2="ripple"></feComposite>
+							<feComposite in2="SourceGraphic"></feComposite>
+						</filter>
+					</defs>
+				</svg>
+				<button id="component-4" class="btn btn-buy" style="filter: url('#filter-ripple-4')">Купить</button>
+			</div>
+		</div>
+		<!-- /container -->
+		<script src="jquery.min.js"></script>
+		<script src="jquery.formstyler.min.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
